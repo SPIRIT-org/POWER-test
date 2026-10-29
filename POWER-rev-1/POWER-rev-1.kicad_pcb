@@ -91,7 +91,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -7954,7 +7953,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "CSS-1210MC"
+		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/css.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8172,9 +8171,9 @@
 			(drill 0.8636)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "EN3V3A SW OUT")
+			(net "unconnected-(SW1-Pad2)")
 			(pinfunction "2_2")
-			(pintype "unspecified")
+			(pintype "unspecified+no_connect")
 			(uuid "85dc4013-282b-4806-bb96-2fc234105341")
 		)
 		(pad "3" thru_hole circle
@@ -8183,9 +8182,9 @@
 			(drill 0.8636)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(SW1-Pad3)")
+			(net "EN3V3A SW OUT")
 			(pinfunction "3_3")
-			(pintype "unspecified+no_connect")
+			(pintype "unspecified")
 			(uuid "cf54c00a-437f-43ae-b0d1-9bf024f9da17")
 		)
 		(embedded_fonts no)
@@ -12238,9 +12237,9 @@
 			(drill 0.8636)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(Q2-G)")
+			(net "unconnected-(SW3-Pad2)")
 			(pinfunction "2_2")
-			(pintype "unspecified")
+			(pintype "unspecified+no_connect")
 			(uuid "dd5f347a-7087-4613-9ec5-7fbd01f0650c")
 		)
 		(pad "3" thru_hole circle
@@ -12249,9 +12248,9 @@
 			(drill 0.8636)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(SW3-Pad3)")
+			(net "CAMSWITCH")
 			(pinfunction "3_3")
-			(pintype "unspecified+no_connect")
+			(pintype "unspecified")
 			(uuid "bf404d19-23b5-48a0-9f6f-2068b6ad38ad")
 		)
 		(embedded_fonts no)
@@ -15240,6 +15239,252 @@
 			)
 		)
 	)
+	(footprint "SPIRIT-footprints:0805-resistor"
+		(layer "F.Cu")
+		(uuid "b777b0d3-2655-4b65-ac0f-b308c8c0cee5")
+		(at 154.875 118.05)
+		(property "Reference" "R15"
+			(at -0.2 -1.3 0)
+			(layer "F.SilkS")
+			(uuid "9c5cb626-33a0-4db4-a0b5-1a26c87c8ac3")
+			(effects
+				(font
+					(size 0.64 0.64)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10Ω"
+			(at 1.8 0 0)
+			(layer "F.Fab")
+			(uuid "20b42394-44ab-46fe-a6b0-7333dd86aca6")
+			(effects
+				(font
+					(size 0.64 0.64)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "491510ad-3741-4ca5-9be2-a0651af82c19")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a75f7daa-b74f-4636-a2ae-57da99f42c47")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0805FR-0710RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "896ea771-95f9-4139-818e-3474b15443bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/7aef17fc-1683-4ee0-bf35-1309eeb9bc14")
+		(sheetname "/")
+		(sheetfile "POWER-rev-1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.2 -0.4)
+			(end 0.2 -0.4)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "23347211-c307-454e-802a-f18408856f40")
+		)
+		(fp_line
+			(start -0.2 0.4)
+			(end -0.2 -0.4)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "31c5bfdb-6c5e-4772-a264-637454a8324b")
+		)
+		(fp_line
+			(start -0.2 0.4)
+			(end 0.2 0.4)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "54355f32-87a7-48a6-a2b4-85140c42c1d3")
+		)
+		(fp_line
+			(start 0 -0.4)
+			(end 0 -0.6)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e837463f-77a4-4c6a-9f16-b2ef67973156")
+		)
+		(fp_line
+			(start 0 0.6)
+			(end 0 0.4)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8130c422-6197-41e3-8bb2-cd8d19ab4b89")
+		)
+		(fp_line
+			(start 0.2 0.4)
+			(end 0.2 -0.4)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9ba69dcd-4d67-4706-94c6-74536935cba5")
+		)
+		(fp_line
+			(start -1.5 -0.875)
+			(end -1.5 0.875)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1e7eac5d-2d90-4cc4-948d-1d83f53f154e")
+		)
+		(fp_line
+			(start -1.5 0.875)
+			(end 1.5 0.875)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "582f1fa1-a848-4ba2-be62-9ceb1fc5490c")
+		)
+		(fp_line
+			(start 1.5 -0.875)
+			(end -1.5 -0.875)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1946e725-264c-4473-a69d-f9e0f1125a5c")
+		)
+		(fp_line
+			(start 1.5 0.875)
+			(end 1.5 -0.875)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ce3b37f2-cc6c-4e3e-bb87-add2bbed4366")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1cc7c464-e597-458a-b793-1e25bbe88dfb")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4764feef-ce61-46ea-a5d7-8ee0a1c2bf76")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3539aaef-b4c0-4392-9836-315e87c88294")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3c324a6a-fe43-4ef3-a1cd-c52cc5b611ef")
+		)
+		(pad "1" smd rect
+			(at -0.9 0)
+			(size 0.7 1.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SYS")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "b14947ad-5245-43c0-abff-443d445395da")
+		)
+		(pad "2" smd rect
+			(at 0.9 0)
+			(size 0.7 1.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(U5-VCC)")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "042eac0e-fee5-43d0-b226-b69e118647fe")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/component-libs/SPIRIT-3D-models/1K-05W-0805-RES_ERJP06J102V.step"
+			(offset
+				(xyz 0 0 0.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 -0 -0)
+			)
+		)
+	)
 	(footprint "SPIRIT-footprints:0603-capacitor"
 		(layer "F.Cu")
 		(uuid "c0f08cca-1fb8-4707-bdf3-51bc7ef22196")
@@ -17382,9 +17627,9 @@
 			(drill 0.8636)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "MICSWITCH")
+			(net "unconnected-(SW2-Pad2)")
 			(pinfunction "2_2")
-			(pintype "unspecified")
+			(pintype "unspecified+no_connect")
 			(uuid "b69eed97-0b5e-4910-a198-cee4943ccec6")
 		)
 		(pad "3" thru_hole circle
@@ -17393,9 +17638,9 @@
 			(drill 0.8636)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(SW2-Pad3)")
+			(net "MICSWITCH")
 			(pinfunction "3_3")
-			(pintype "unspecified+no_connect")
+			(pintype "unspecified")
 			(uuid "fce5de42-fa9d-4f7d-90af-9ba1b94d7d62")
 		)
 		(embedded_fonts no)
@@ -20832,7 +21077,6 @@
 				)
 			)
 		)
-		(path "/f7a961f5-7bf5-41ce-96bf-0ad3e9e639c8")
 		(sheetname "/")
 		(sheetfile "POWER-rev-1.kicad_sch")
 		(units
@@ -22200,7 +22444,6 @@
 				)
 			)
 		)
-		(path "/e55d379f-aa21-490f-a9ee-c085d5349981")
 		(sheetname "/")
 		(sheetfile "POWER-rev-1.kicad_sch")
 		(units

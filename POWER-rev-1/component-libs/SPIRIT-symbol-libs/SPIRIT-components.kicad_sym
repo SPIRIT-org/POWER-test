@@ -20433,7 +20433,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/resettable-ptcs-low-rho-smd-ptc-datasheet?assetguid=B786FAF0-DE16-4763-9D22-6B8080943CAF"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20445,6 +20445,17 @@
 			)
 		)
 		(property "Description" "PTC_RESET_FUSE_9A_6V_1210_polyfuse-1210L900SLPR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1210L900SLPR"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
